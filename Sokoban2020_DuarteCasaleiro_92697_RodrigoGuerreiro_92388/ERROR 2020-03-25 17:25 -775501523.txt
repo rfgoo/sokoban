@@ -1,0 +1,201 @@
+PandionJ Error Report
+
+java.lang.NullPointerException : null
+
+Exception trace: 
+
+pt.iscte.pandionj.parser.VarParser$MethodVisitor.handleVarDeclaration(VarParser.java:214)
+pt.iscte.pandionj.parser.VarParser$MethodVisitor.visit(VarParser.java:153)
+org.eclipse.jdt.core.dom.FieldDeclaration.accept0(FieldDeclaration.java:265)
+org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2874)
+org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:2945)
+org.eclipse.jdt.core.dom.EnumDeclaration.accept0(EnumDeclaration.java:261)
+org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2874)
+org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:2945)
+org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2874)
+pt.iscte.pandionj.parser.JavaSourceParser.parse(JavaSourceParser.java:56)
+pt.iscte.pandionj.parser.VarParser.run(VarParser.java:62)
+pt.iscte.pandionj.parser.ParserManager.getVarParserResult(ParserManager.java:21)
+pt.iscte.pandionj.parser.ParserManager.getAttributeTag(ParserManager.java:35)
+pt.iscte.pandionj.model.ObjectModel.addFields(ObjectModel.java:116)
+pt.iscte.pandionj.model.ObjectModel.init(ObjectModel.java:85)
+pt.iscte.pandionj.model.ObjectModel.<init>(ObjectModel.java:77)
+pt.iscte.pandionj.model.RuntimeModel.lambda$2(RuntimeModel.java:308)
+pt.iscte.pandionj.PandionJView.executeInternal(PandionJView.java:337)
+pt.iscte.pandionj.model.RuntimeModel.getObject(RuntimeModel.java:288)
+pt.iscte.pandionj.model.ReferenceModel.getModelTarget(ReferenceModel.java:42)
+pt.iscte.pandionj.model.StackFrameModel.findReferences(StackFrameModel.java:278)
+pt.iscte.pandionj.model.StackFrameModel.getReferencesTo(StackFrameModel.java:271)
+pt.iscte.pandionj.model.RuntimeModel.findReferences(RuntimeModel.java:365)
+pt.iscte.pandionj.FigureProvider.getEntityTags(FigureProvider.java:115)
+pt.iscte.pandionj.FigureProvider.createFigure(FigureProvider.java:74)
+pt.iscte.pandionj.FigureProvider.getFigure(FigureProvider.java:49)
+pt.iscte.pandionj.figures.ObjectContainer.addObject(ObjectContainer.java:56)
+pt.iscte.pandionj.figures.ObjectContainer.addObject(ObjectContainer.java:50)
+pt.iscte.pandionj.RuntimeViewer.lambda$2(RuntimeViewer.java:262)
+pt.iscte.pandionj.PandionJView.executeInternal(PandionJView.java:327)
+pt.iscte.pandionj.extensibility.PandionJUI.lambda$1(PandionJUI.java:136)
+org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4145)
+org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3812)
+org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+org.eclipse.jface.window.Window.open(Window.java:799)
+pt.iscte.pandionj.ErrorHandler.logging(ErrorHandler.java:81)
+org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:162)
+org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:106)
+org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:110)
+org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:253)
+org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:225)
+org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:97)
+org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:88)
+org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:80)
+org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:76)
+org.eclipse.core.internal.runtime.Log.log(Log.java:68)
+org.eclipse.ui.statushandlers.WorkbenchErrorHandler.handle(WorkbenchErrorHandler.java:60)
+org.eclipse.ui.internal.ide.IDEWorkbenchErrorHandler.handle(IDEWorkbenchErrorHandler.java:107)
+org.eclipse.ui.internal.WorkbenchErrorHandlerProxy.handle(WorkbenchErrorHandlerProxy.java:34)
+org.eclipse.ui.statushandlers.StatusManager.handle(StatusManager.java:214)
+org.eclipse.ui.statushandlers.StatusManager.handle(StatusManager.java:256)
+org.eclipse.ui.statushandlers.StatusManager.handle(StatusManager.java:266)
+org.eclipse.ui.application.WorkbenchAdvisor.eventLoopException(WorkbenchAdvisor.java:325)
+org.eclipse.ui.internal.Workbench$1.eventLoopException(Workbench.java:486)
+org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.handle(PartRenderingEngine.java:1180)
+org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.lambda$1(PartRenderingEngine.java:1155)
+org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:97)
+org.eclipse.swt.widgets.Display.sendEvent(Display.java:4406)
+org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1512)
+org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1535)
+org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1520)
+org.eclipse.swt.widgets.Control.drawWidget(Control.java:1278)
+org.eclipse.swt.widgets.Canvas.drawWidget(Canvas.java:176)
+org.eclipse.swt.widgets.Widget.drawRect(Widget.java:776)
+org.eclipse.swt.widgets.Canvas.drawRect(Canvas.java:170)
+org.eclipse.swt.widgets.Display.windowProc(Display.java:6043)
+org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+org.eclipse.swt.widgets.Display.applicationNextEventMatchingMask(Display.java:5284)
+org.eclipse.swt.widgets.Display.applicationProc(Display.java:5716)
+org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+org.eclipse.swt.internal.cocoa.NSApplication.nextEventMatchingMask(NSApplication.java:97)
+org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3804)
+org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+org.eclipse.jface.window.Window.open(Window.java:799)
+org.eclipse.jface.dialogs.MessageDialog.open(MessageDialog.java:394)
+pt.iscte.pandionj.PandionJView.lambda$1(PandionJView.java:249)
+pt.iscte.pandionj.PandionJView.executeInternal(PandionJView.java:327)
+pt.iscte.pandionj.extensibility.PandionJUI.lambda$1(PandionJUI.java:136)
+org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4145)
+org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3812)
+org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:633)
+org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+Error code: -775501523
+
+User code: 
+
+package pt.iscte.dcti.poo.sokoban.starter;
+
+import java.util.Random;
+
+import pt.iul.ista.poo.gui.ImageMatrixGUI;
+import pt.iul.ista.poo.gui.ImageTile;
+import pt.iul.ista.poo.utils.Direction;
+import pt.iul.ista.poo.utils.Point2D;
+
+public class Player extends AbstractObject implements ImageTile{
+
+
+
+	private Point2D position;
+
+	
+	public Player(Point2D position) {
+		super(position, "Empilhadora_D", 2);
+	}
+
+	public void move() {
+		
+		// Generate a random vector for movement
+		Direction[] possibleDirections = Direction.values();
+		
+		Random randomizer = new Random();
+		int randomNumber = randomizer.nextInt(possibleDirections.length);
+		
+		Direction randomDirection = possibleDirections[randomNumber];
+
+		Point2D newPosition = position.plus(randomDirection.asVector());
+		if (newPosition.getX()>=0 && newPosition.getX()<10 && newPosition.getY()>=0 && newPosition.getY()<10 ){
+			position = newPosition;
+		}
+		
+		ImageMatrixGUI.getInstance().update();
+	}
+	
+	
+
+	public void move(int lastKeyPressed) {
+
+		Direction Dir = Direction.directionFor(lastKeyPressed);
+
+>>>>		Point2D newPosition = position.plus(Dir.asVector());
+		if (newPosition.getX() >= 0 && newPosition.getX() < 10 && newPosition.getY() >= 0 && newPosition.getY() < 10 ) {
+			position = newPosition;
+		}
+		
+		switch(Dir){
+		case LEFT:
+			Player.super.setNome("Empilhadora_L");
+			break;
+		case RIGHT:
+			Player.super.setNome("Empilhadora_D");
+			break;
+		case UP:
+			Player.super.setNome("Empilhadora_U");
+			break;
+		case DOWN:
+			Player.super.setNome("Empilhadora_D");
+			break;
+		default:
+			break;
+		}
+		ImageMatrixGUI.getInstance().update();
+	}
+
+}
+
+
+
+
+
+
+
+
+Call stack:
+
+pt.iscte.pandionj.model.StackFrameModel@1716b677
+pt.iscte.pandionj.model.StackFrameModel@3032983f
+pt.iscte.pandionj.model.StackFrameModel@4d1c21b9
+pt.iscte.pandionj.model.StackFrameModel@4f0214f4
+pt.iscte.pandionj.model.StackFrameModel@6d85a66d
+
